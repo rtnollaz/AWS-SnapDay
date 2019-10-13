@@ -1,0 +1,28 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<header>
+    <div class="container">
+        <a href="#" class="logo">SnapDay</a>
+        <nav class="navbar navbar-dark bg-dark">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul>
+                <li><a href="#" routerLink="/home">Home</a></li>
+                <li><a href="#" routerLink="/signup">Sign up</a></li>
+                <li><a href="#" routerLink="/login">Log in</a></li>
+                <li><a href="#" routerLink="/post">Post an image</a></li>
+            </ul>
+                </div>
+        </nav>
+    </div>
+</header>
+<div class="container">
+    <router-outlet></router-outlet>
+    <section>
+        <div>
+            <img src="https://images.unsplash.com/photo-1542302923-297e4327f7f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="img-fluid" alt="Responsive image">
+        </div>
+    </section>
+</div>

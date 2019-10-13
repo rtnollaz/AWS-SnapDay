@@ -1,0 +1,24 @@
+<h3>Post an Image!</h3>
+
+<form (ngSubmit)="onSubmit()">
+    <input [(ngModel)]="newPost.name" placeholder="name" name="name" />
+    <input
+        id="image"
+        type="file"
+        accept="image/*"
+        (change)="onFileChanged($event)"
+        name="image"
+        #fileInput
+        />
+<button type="submit">
+    submit
+</button>
+</form>
+<ul>
+    <li *ngFor="let post of posts">
+        {{post.name}}
+        <img src="{{ post.image }}" width="400" />
+    </li>
+</ul>
+
+<router-outlet></router-outlet>
